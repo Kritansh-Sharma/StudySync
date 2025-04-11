@@ -466,6 +466,11 @@
   </footer>
 
   <script>
+     document.querySelector('.nav-item[href="#Home"]').addEventListener('click', function (e) {
+    e.preventDefault(); // Stop the default scroll behavior
+    location.reload();  // Refresh the page
+  });
+    
     let checkedInDays = JSON.parse(localStorage.getItem('checkedInDays')) || [];
     let timerInterval;
     let timeLeft = 1500; // 25 minutes in seconds
