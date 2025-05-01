@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Video Showcase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(to right, #212130, #39304A);
+    }
+    h1, h2, h3 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    p {
+      line-height: 1.6;
+    }
+    .main-heading {
+      font-weight: 700;
+      font-size: 3.5rem;
+      color: #f7fafc;
+    }
+    .sub-heading {
+      font-weight: 500;
+      font-size: 1.25rem;
+      color: #e2e8f0;
+    }
+    .content-heading {
+      font-weight: 600;
+      font-size: 2rem;
+      color: #4a5568;
+    }
+    .content-text {
+      font-size: 1.125rem;
+      color: #2d3748;
+    }
+    .main-video-container {
+      border: 5px solid #4A90E2; /* Light Blue Border */
+      border-radius: 15px; /* Rounded corners */
+      background-color: #333;
+      padding: 20px;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    }
+    .video {
+      border-radius: 10px;
+      width: 100%;
+      height: 80%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body class="gradient-bg text-gray-100 flex flex-col items-center justify-center min-h-screen p-4">
+  <header class="w-full text-center py-6">
+    <h1 class="main-heading">Speaking Styles &#128037;</h1>
+    <p class="sub-heading mt-2">A glimpse into my work</p>
+  </header>
+
+  <main class="bg-white text-gray-800 rounded-2xl shadow-2xl p-6 max-w-4xl w-full">
+    <h2 class="content-heading text-center mb-4">Video</h2>
+    <div class="main-video-container">
+      <video class="video" controls>
+        <source src="C:\Users\Kritansh & Garvit\Documents\Report Making\Speaking_style_Vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <p class="content-text text-center mt-4">Thank you for watching &#128579;</p>
+  </main>
+
+  <section class="mt-8 bg-white text-gray-800 rounded-2xl shadow-lg p-6 max-w-4xl w-full">
+    <h3 class="content-heading mb-4">About This Video</h3>
+    <p class="content-text">This video is a personal creation, crafted to showcase different speaking styles through both visual and audio formats. I’ve poured time, effort, and passion into every detail, and I sincerely hope it resonates with you.</p>
+  </section>
+
+  <footer class="mt-8 text-center text-sm text-gray-200">
+    &#127800; &copy; 2025  All rights reserved to Kritansh. &#127800;
+  </footer>
+</body>
+</html>
